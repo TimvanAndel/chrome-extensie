@@ -1,0 +1,11 @@
+{
+  "name": "Check de prijs",
+  "description": "Check eenvoudig de huidige prijs van een cryptovaluta",
+  "version": "1.0",
+  
+  "manifest_version": 3,
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
