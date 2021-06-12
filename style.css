@@ -1,11 +1,84 @@
 .ng-scope{
     display: none;
 }
+body{
+    width: 260px;
+}
 #ddlViewBy{
     display: block;
     margin: 0 auto;
 }
 #button{
+    font-family: 'Arial';
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 11px 8px;
+    outline: 0;
+    border: 0px solid #000000;
+    border-radius: 0px;
+    background: #1154ff;
+    color: #ffffff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    margin-top: 15px;
+}
+#button:hover,
+#button:focus {
+    color: #ffffff;
+    background: #000aff;
+}
+.widget{
     display: block;
-    margin: 0 auto;
+    margin: 0 auto; 
+}
+.select {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+}    .select select {
+        font-family: 'Arial';
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        padding: 11px 8px;
+        outline: 0;
+        border: 0px solid #000000;
+        border-radius: 0px;
+        background: #1154ff;
+        color: #ffffff;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+        .select select::-ms-expand {
+            display: none;
+        }
+        .select select:hover,
+        .select select:focus {
+            color: #ffffff;
+            background: #000aff;
+        }
+        .select select:disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+.select_arrow {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0px 5px;
+    border-color: #ffffff transparent transparent transparent;
+}
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+    border-top-color: #ffffff;
+}
+.select select:disabled ~ .select_arrow {
+    border-top-color: #ffffff;
 }

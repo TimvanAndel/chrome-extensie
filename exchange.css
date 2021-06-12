@@ -1,0 +1,22 @@
+#button{
+    font-family: 'Arial';
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 11px 8px;
+    outline: 0;
+    border: 0px solid #000000;
+    border-radius: 0px;
+    background: #1154ff;
+    color: #ffffff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    margin-top: 15px;
+}
+#button:hover,
+#button:focus {
+    color: #ffffff;
+    background: #000aff;
+}
